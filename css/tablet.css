@@ -61,6 +61,31 @@
         padding: 0 16px;
     }
     /* contact end */
+    /* section-one background start */
+    .section-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 432px;
+        background: 
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+            url('../images/background-image.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
+    @media (min-resolution: 2dppx) {
+        .section-one {
+            background: 
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                url('../images/tablet-background-x2.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    /* section-one background end */
+
     /* section-two start */
     .section-two {
         margin-top: 96px;

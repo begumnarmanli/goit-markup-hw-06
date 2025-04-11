@@ -76,7 +76,11 @@ html, body {
 }
 .contact :hover {
     color: #4d5ae5;
-
+}
+.contact p {
+  display: flex;
+  align-items: center; 
+  white-space: nowrap; 
 }
 h2 {
     font-family: var(--second-family);
@@ -159,6 +163,14 @@ nav a {
     margin: 0 auto;
 }
 
+/* Yüksek çözünürlüklü ekranlar için (Retina) arka plan resmi */
+@media (min-resolution: 192dpi) {
+  .section-one {
+      background: 
+          linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+          url('../images/background-x2.jpg'); /* Retina ekranlar için x2 */
+  }
+}
 .section-one .container {
     max-width: 1440px;
     width: 100%;

@@ -22,10 +22,13 @@
     .header-container {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: right;
         padding: 24px 16px;
     }
-
+    .header-container h2 {
+    justify-content: flex-start; 
+    padding-left: 16px; 
+}
     /* Logo */
     .logo {
         color: #4D5AE5;
@@ -59,6 +62,9 @@
     }
 
     .section-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 432px;
         background: 
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
@@ -67,9 +73,23 @@
         background-position: center; 
         background-repeat: no-repeat; 
     }
+    @media (min-resolution: 2dppx) {
+        .section-one {
+            background: 
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+                url('../images/mobile-background-x2.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
     .section-one-content h2{
         font: 700 36px / 1.11111 "Roboto", sans-serif;
         letter-spacing: 0.02em;
+        width: 216px;
+        margin: auto;
+        margin-bottom: 72px;
+        
     }
 
     /* .section-two start */
